@@ -13,6 +13,11 @@ public class TutorsService {
     private TutorsMapper mapper;
     private TutorsRepository repository;
 
+    public TutorsService(TutorsMapper mapper, TutorsRepository repository) {
+        this.mapper = mapper;
+        this.repository = repository;
+    }
+
     public TutorResponse createTutor(TutorRequestPOSTDto request){
         TutorsDomain tutorsDomain = mapper.toEntity(request);
         TutorsDomain tutorsDomainSaved = repository.save(tutorsDomain);

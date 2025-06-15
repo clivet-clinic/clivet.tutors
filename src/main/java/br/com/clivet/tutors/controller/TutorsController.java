@@ -9,8 +9,14 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/tutors")
 public class TutorsController {
+
     TutorsService service;
+
+    public TutorsController(TutorsService service) {
+        this.service = service;
+    }
 
     @PostMapping
     public ResponseEntity<TutorResponse> createTutors(@Validated @RequestBody TutorRequestPOSTDto request){

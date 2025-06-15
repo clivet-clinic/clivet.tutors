@@ -6,22 +6,21 @@ import jakarta.persistence.*;
 public class TutorsDomain {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sclivet_tutors")
-    @SequenceGenerator(name = "id_tutor", sequenceName = "sclivet_tutors", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column(name= "name_tutor", length= 20)
+    @Column(name= "tutor_name", length= 100)
     String name;
 
-    @Column(name= "surname_tutor", length= 100)
+    @Column(name= "tutor_surname", length= 100)
     String surname;
 
-    @Column(name= "email_tutor", length= 100)
+    @Column(name= "tutor_email", length= 100)
     String email;
 
-    @Column(name= "tel_tutor", length= 19)
-    String tel;
+    @Column(name= "tutor_contact", length= 20)
+    String contact;
 
-    @Column(name = "cpf_tutor", length = 11)
+    @Column(name = "tutor_cpf", length = 11)
     String cpf;
 }
