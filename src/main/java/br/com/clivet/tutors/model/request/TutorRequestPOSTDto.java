@@ -26,12 +26,12 @@ public class TutorRequestPOSTDto {
             regexp = "^\\+\\d{1,3}\\s?\\(?\\d{2}\\)?\\s?9\\d{4}-?\\d{4}$",
             message = "Número de telefone inválido. Use o formato +55 (11) 91234-5678"
     )
-    String tel;
+    String contact;
 
-    @NotNull(message = "O campo CPF não pode ser nulo")
-    @Pattern(
-            regexp = "^(\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}|\\d{11})$",
-            message = "CPF inválido"
-    )
+//    @NotNull(message = "O campo CPF não pode ser nulo")
+//    @Pattern(
+//            regexp = "^(\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}|\\d{11})$",
+//            message = "CPF inválido"
+//    )
     String cpf;
 }

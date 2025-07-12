@@ -4,10 +4,7 @@ import br.com.clivet.tutors.domain.TutorsDomain;
 import br.com.clivet.tutors.model.request.TutorRequestPATCHDto;
 import br.com.clivet.tutors.model.request.TutorRequestPOSTDto;
 import br.com.clivet.tutors.model.response.TutorResponse;
-import org.mapstruct.BeanMapping;
-import org.mapstruct.Mapper;
-import org.mapstruct.MappingTarget;
-import org.mapstruct.NullValuePropertyMappingStrategy;
+import org.mapstruct.*;
 
 @Mapper(componentModel = "spring")
 public interface TutorsMapper {

@@ -5,4 +5,4 @@ public record TutorResponse (
     String name,
     String surname,
     String email,
-    String tel){}
+    String contact){}
