@@ -1,7 +1,11 @@
 package br.com.clivet.tutors.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity(name = "clivet_tutors")
 public class TutorsDomain {
 
